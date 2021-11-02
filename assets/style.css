@@ -1,0 +1,163 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css2?family=Faster+One&family=Racing+Sans+One&family=Roboto:wght@300;400;700;900&display=swap");
+
+:root {
+  --titles: "Racing Sans One", cursive;
+  --roboto: "Roboto", sans-serif;
+  --brandFont: "Faster One", cursive;
+  --azul: #08c;
+  --azul-claro: #49bcff;
+  --gris-oscuro: #1a1a1a;
+  --gris-claro: #313131;
+  --transition: all 0.3s linear;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+body {
+  font-family: var(--roboto);
+}
+.navbar-brand {
+  font-family: var(--brandFont);
+  font-weight: normal;
+  font-size: 2rem;
+  margin-right: 5rem;
+}
+.navbar {
+  background: #1a1a1a;
+}
+.nav-link {
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+.nav-link:hover {
+  outline: 3px solid var(--azul);
+  padding-left: 10px;
+  background-color: var(--azul);
+}
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url(img/ebike-cannondale-mujer.jpg) center/cover;
+  margin-top: 60px;
+  /* height: calc(100vh - 60px); */
+  height: 100vh;
+  position: relative;
+}
+.title {
+  font-family: var(--titles);
+  font-weight: 700;
+  color: white;
+  font-size: 4rem;
+  max-width: 300px;
+  text-transform: uppercase;
+}
+
+/* PRESENTACION */
+.presentacion {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("img/pexels-danny-bor-9994208.jpg") center/cover fixed;
+  color: white;
+}
+.subtitle {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* CARACTERISTICAS */
+.caract {
+  background: var(--gris-claro);
+}
+.caract h1 {
+  color: white;
+}
+.caract h3 {
+  font-weight: 700;
+}
+.tarjeta:hover {
+  color: var(--azul);
+}
+
+/* BENEFICIOS */
+.resaltado {
+  color: var(--azul-claro);
+}
+.featurette-heading {
+  font-weight: 700;
+}
+
+/* COMPRA */
+.compra {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("img/compra2.jpg") center/cover;
+  color: white;
+}
+.titulo-compra {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* CONTACTO */
+.formulario {
+  max-width: 800px;
+}
+.btn-dark {
+  background-color: var(--gris-oscuro);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition);
+}
+.btn-dark:hover {
+  letter-spacing: 3px;
+}
+
+/* FOOTER */
+.footer {
+  height: 100px;
+  background-color: var(--gris-oscuro);
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 768px) {
+  header {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+      url(img/lg-2.jpg) center/cover;
+    margin-top: 30px;
+  }
+  .title {
+    font-size: 5rem;
+  }
+  .centrar {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar-brand {
+    margin-right: 15rem;
+  }
+  .title {
+    font-size: 5rem;
+  }
+  .titulo-compra {
+    font-size: 3rem;
+  }
+}
